@@ -8,15 +8,15 @@ namespace CurrencyMidterm
 {
     abstract class Coin : ICoin
     {
-        public int year => throw new NotImplementedException();
+        public int year { get;  }
 
-        public string name => throw new NotImplementedException();
+        public string name { get { return ""; } }
 
-        public int monetary => throw new NotImplementedException();
+        public int monetary { get { return 0; } }
 
         public string About()
         {
-            throw new NotImplementedException();
+            return "";
         }
     }
 }

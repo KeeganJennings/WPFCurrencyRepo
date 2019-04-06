@@ -4,9 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CurrencyMidterm
+namespace CurrencyMidterm.USCoins
 {
     class Nickel : USCoin
     {
+        public Nickel(USCoin.MintMarks mint)
+        {
+
+        }
     }
 }

@@ -14,6 +14,7 @@ namespace CurrencyMidterm
         {
 
         }
+
         public string About()
         {
             throw new NotImplementedException();
@@ -24,12 +25,12 @@ namespace CurrencyMidterm
             throw new NotImplementedException();
         }
 
-        public ICurrency CreateChange(double amount)
+        public ICurrencyRepo CreateChange(double amount)
         {
 
         }
 
-        public ICurrency CreateChange(double amountTendered, double TotalCost)
+        public ICurrencyRepo CreateChange(double amountTendered, double TotalCost)
         {
 
         }

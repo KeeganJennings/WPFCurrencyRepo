@@ -61,7 +61,6 @@
     <Compile Include="USCoins\Penny.cs" />
     <Compile Include="USCoins\Quarter.cs" />
     <Compile Include="USCoins\USCoin.cs" />
-    <Compile Include="USCoins\USCoinMintMark.cs" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>

@@ -4,9 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CurrencyMidterm
+namespace CurrencyMidterm.USCoins
 {
-    class Quarter
+    class Quarter : USCoin
     {
+        public Quarter(USCoin.MintMarks mint)
+        {
+
+        }
     }
 }
