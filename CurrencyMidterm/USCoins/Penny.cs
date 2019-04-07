@@ -8,9 +8,28 @@ namespace CurrencyMidterm.USCoins
 {
     class Penny : USCoin
     {
+        MintMarks mintMark;
+        public Penny()
+        {
+            year = DateTime.Now.Year;
+            mintMark = MintMarks.D;
+            name = "Penny";
+            monetaryValue = 0.01;
+        }
+
         public Penny(MintMarks mint)
         {
-            mint = MintMarks.D;
-            this.year = 
+            year = DateTime.Now.Year;
+            mintMark = mint;
+            name = "Penny";
+            monetaryValue = 0.01;
+        }
+
+        public new string About()
+        {
+            string about;
+            about = About(year, name, monetaryValue, mintMark);
+            return about;
+        }
     }
 }

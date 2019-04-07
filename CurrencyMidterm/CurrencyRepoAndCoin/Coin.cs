@@ -8,11 +8,11 @@ namespace CurrencyMidterm
 {
     abstract class Coin : ICoin
     {
-        public int year { get;  }
+        public int year { get; set; }
 
-        public string name { get { return ""; } }
+        public string name { get; set; }
 
-        public int monetary { get { return 0; } }
+        public double monetaryValue { get; set; }
 
         public string About()
         {

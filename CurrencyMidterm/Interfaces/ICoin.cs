@@ -8,6 +8,6 @@ namespace CurrencyMidterm
 {
     interface ICoin : ICurrency
     {
-        static int year { get; }
+        int year { get; }
     }
 }

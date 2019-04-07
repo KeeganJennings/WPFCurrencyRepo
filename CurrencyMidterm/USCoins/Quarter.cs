@@ -8,9 +8,28 @@ namespace CurrencyMidterm.USCoins
 {
     class Quarter : USCoin
     {
-        public Quarter(USCoin.MintMarks mint)
+        MintMarks mintMark;
+        public Quarter()
         {
+            year = DateTime.Now.Year;
+            mintMark = MintMarks.D;
+            name = "Quarter";
+            monetaryValue = 0.25;
+        }
 
+        public Quarter(MintMarks mint)
+        {
+            year = DateTime.Now.Year;
+            mintMark = mint;
+            name = "Quarter";
+            monetaryValue = 0.25;
+        }
+
+        public new string About()
+        {
+            string about;
+            about = About(year, name, monetaryValue, mintMark);
+            return about;
         }
     }
 }

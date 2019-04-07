@@ -12,7 +12,7 @@ namespace CurrencyMidterm
 
         public CurrencyRepo()
         {
-
+            this.Coins = new List<ICoin>();
         }
 
         public string About()
@@ -22,26 +22,63 @@ namespace CurrencyMidterm
 
         public void AddCoin(ICoin c)
         {
-            throw new NotImplementedException();
+            Coins.Add(c);
         }
 
         public ICurrencyRepo CreateChange(double amount)
         {
 
+
+            return this;
         }
 
         public ICurrencyRepo CreateChange(double amountTendered, double TotalCost)
         {
+            double change = amountTendered - TotalCost;
 
+
+            return this;
         }
         public int GetCoinCount()
         {
-            throw new NotImplementedException();
+            return Coins.Capacity;
         }
 
         public ICurrencyRepo MakeChange(double amount)
         {
-            throw new NotImplementedException();
+            double totalAmountOfCoins = 0;
+
+
+            if (amount > totalAmountOfCoins)
+            {
+                if (totalAmountOfCoins + 1 > amount)
+                {
+                    USCoins.DollarCoin dc = new USCoins.DollarCoin();
+                    Coins.Add(dc);
+                }
+                else if (totalAmountOfCoins + .25 > amount)
+                {
+                    USCoins.Quarter q = new USCoins.Quarter();
+                    Coins.Add(q);
+                }
+                else if (totalAmountOfCoins + .1 > amount)
+                {
+                    USCoins.Dime d = new USCoins.Dime();
+                    Coins.Add(d);
+                }
+                else if (totalAmountOfCoins + .05 > amount)
+                {
+                    USCoins.Nickel n = new USCoins.Nickel();
+                    Coins.Add(n);
+                }
+                else if (totalAmountOfCoins + .01 > amount)
+                {
+                    USCoins.Penny p = new USCoins.Penny();
+                    Coins.Add(p);
+                }
+            }
+
+            return totalAmountOfCoins;
         }
 
         public ICurrencyRepo MakeChange(double amountTendered, double totalCost)
@@ -56,7 +93,14 @@ namespace CurrencyMidterm
 
         public double TotalValue()
         {
-            throw new NotImplementedException();
+            double totalValue = 0;
+
+            foreach(Coin c in Coins)
+            {
+                totalValue += c.monetaryValue;
+            }
+
+            return totalValue;
         }
     }
 }

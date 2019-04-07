@@ -20,6 +20,5 @@ namespace CurrencyMidterm
         ICoin RemoveCoin(ICoin c);
 
         double TotalValue();
-
     }
 }

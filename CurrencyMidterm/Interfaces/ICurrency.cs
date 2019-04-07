@@ -9,7 +9,7 @@ namespace CurrencyMidterm
     interface ICurrency
     {
         string name { get; }
-        int monetary { get; }
+        double monetaryValue { get; }
         string About();
     }
 }

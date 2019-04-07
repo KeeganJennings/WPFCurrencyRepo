@@ -18,14 +18,32 @@ namespace CurrencyMidterm.USCoins
 
         MintMarks mintMark;
 
-        private void About()
+        public string About(int year, string name, double monetaryValue, MintMarks mint)
         {
-
+            return $"US " + name + " is from " + year + ". It is worth $" + monetaryValue + ". It was made in " + GetMintNameFromMark(mint) + ".";
         }
 
-        public void GetMintNameFromMark()
+        public string GetMintNameFromMark(MintMarks marks)
         {
+            string mintName = "";
+            switch(marks)
+            {
+                case MintMarks.P:
+                    mintName = "Philadelphia";
+                    break;
+                case MintMarks.D:
+                    mintName = "Delaware";
+                    break;
+                case MintMarks.S:
+                    mintName = "San Francisco";
+                    break;
+                case MintMarks.W:
+                    mintName = "West Point";
+                    break;
 
+            }
+
+            return mintName;
         }
     }
 }
