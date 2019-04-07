@@ -5,8 +5,15 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:CurrencyMidterm"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
+        Title="MainWindow" Height="450" Width="450
         
+        ">
+    <Grid>
+        <Label x:Name="AmountLbl" Content="Amount" HorizontalAlignment="Left" Margin="10,25,0,0" VerticalAlignment="Top" Width="110"/>
+        <TextBox x:Name="AmountTB" HorizontalAlignment="Left" Height="23" Margin="165,28,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="ChangeListTB" HorizontalAlignment="Left" Height="305" Margin="65,56,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="275" IsReadOnly="True"/>
+        <Button x:Name="MakeChangeBTN" Content="Make Change" HorizontalAlignment="Left" Margin="360,28,0,0" VerticalAlignment="Top" Width="75" Height="85" Click="MakeChangeBTN_Click"/>
+        <Button x:Name="LoadWindowBTN" Content="AddCoin" HorizontalAlignment="Left" Margin="10,385,0,0" VerticalAlignment="Top" Width="90" Height="27" Click="LoadWindowBTN_Click"/>
+
     </Grid>
 </Window>

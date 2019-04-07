@@ -1,0 +1,17 @@
+C:\Users\Keegan Jennings\Documents\GitHub\WPFCurrencyRepo\CurrencyMidterm\bin\Debug\CurrencyMidterm.exe.config
+C:\Users\Keegan Jennings\Documents\GitHub\WPFCurrencyRepo\CurrencyMidterm\bin\Debug\CurrencyMidterm.exe
+C:\Users\Keegan Jennings\Documents\GitHub\WPFCurrencyRepo\CurrencyMidterm\bin\Debug\CurrencyMidterm.pdb
+C:\Users\Keegan Jennings\Documents\GitHub\WPFCurrencyRepo\CurrencyMidterm\obj\Debug\CurrencyMidterm.csprojAssemblyReference.cache
+C:\Users\Keegan Jennings\Documents\GitHub\WPFCurrencyRepo\CurrencyMidterm\obj\Debug\MainWindow.g.cs
+C:\Users\Keegan Jennings\Documents\GitHub\WPFCurrencyRepo\CurrencyMidterm\obj\Debug\App.g.cs
+C:\Users\Keegan Jennings\Documents\GitHub\WPFCurrencyRepo\CurrencyMidterm\obj\Debug\CurrencyMidterm_MarkupCompile.cache
+C:\Users\Keegan Jennings\Documents\GitHub\WPFCurrencyRepo\CurrencyMidterm\obj\Debug\CurrencyMidterm_MarkupCompile.lref
+C:\Users\Keegan Jennings\Documents\GitHub\WPFCurrencyRepo\CurrencyMidterm\obj\Debug\MainWindow.baml
+C:\Users\Keegan Jennings\Documents\GitHub\WPFCurrencyRepo\CurrencyMidterm\obj\Debug\CurrencyMidterm.g.resources
+C:\Users\Keegan Jennings\Documents\GitHub\WPFCurrencyRepo\CurrencyMidterm\obj\Debug\CurrencyMidterm.Properties.Resources.resources
+C:\Users\Keegan Jennings\Documents\GitHub\WPFCurrencyRepo\CurrencyMidterm\obj\Debug\CurrencyMidterm.csproj.GenerateResource.cache
+C:\Users\Keegan Jennings\Documents\GitHub\WPFCurrencyRepo\CurrencyMidterm\obj\Debug\CurrencyMidterm.csproj.CoreCompileInputs.cache
+C:\Users\Keegan Jennings\Documents\GitHub\WPFCurrencyRepo\CurrencyMidterm\obj\Debug\CurrencyMidterm.exe
+C:\Users\Keegan Jennings\Documents\GitHub\WPFCurrencyRepo\CurrencyMidterm\obj\Debug\CurrencyMidterm.pdb
+C:\Users\Keegan Jennings\Documents\GitHub\WPFCurrencyRepo\CurrencyMidterm\obj\Debug\AddCoinWindow.g.cs
+C:\Users\Keegan Jennings\Documents\GitHub\WPFCurrencyRepo\CurrencyMidterm\obj\Debug\AddCoinWindow.baml

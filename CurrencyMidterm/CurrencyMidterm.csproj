@@ -55,12 +55,19 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="AddCoinWindow.xaml.cs">
+      <DependentUpon>AddCoinWindow.xaml</DependentUpon>
+    </Compile>
     <Compile Include="USCoins\Dime.cs" />
     <Compile Include="USCoins\DollarCoin.cs" />
     <Compile Include="USCoins\Nickel.cs" />
     <Compile Include="USCoins\Penny.cs" />
     <Compile Include="USCoins\Quarter.cs" />
     <Compile Include="USCoins\USCoin.cs" />
+    <Page Include="AddCoinWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>

@@ -27,14 +27,14 @@ namespace CurrencyMidterm
 
         public ICurrencyRepo CreateChange(double amount)
         {
-
+            MakeChange(amount);
 
             return this;
         }
 
-        public ICurrencyRepo CreateChange(double amountTendered, double TotalCost)
+        public ICurrencyRepo CreateChange(double amountTendered, double totalCost)
         {
-            double change = amountTendered - TotalCost;
+            MakeChange(amountTendered, totalCost);
 
 
             return this;
@@ -49,46 +49,98 @@ namespace CurrencyMidterm
             double totalAmountOfCoins = 0;
 
 
-            if (amount > totalAmountOfCoins)
+            while (amount > totalAmountOfCoins)
             {
-                if (totalAmountOfCoins + 1 > amount)
+                if (totalAmountOfCoins + 1.0 <= amount)
                 {
                     USCoins.DollarCoin dc = new USCoins.DollarCoin();
+                    totalAmountOfCoins += dc.monetaryValue;
                     Coins.Add(dc);
                 }
-                else if (totalAmountOfCoins + .25 > amount)
+                else if (totalAmountOfCoins + .25 <= amount)
                 {
                     USCoins.Quarter q = new USCoins.Quarter();
+                    totalAmountOfCoins += q.monetaryValue;
                     Coins.Add(q);
                 }
-                else if (totalAmountOfCoins + .1 > amount)
+                else if (totalAmountOfCoins + .1 <= amount)
                 {
                     USCoins.Dime d = new USCoins.Dime();
+                    totalAmountOfCoins += d.monetaryValue;
                     Coins.Add(d);
                 }
-                else if (totalAmountOfCoins + .05 > amount)
+                else if (totalAmountOfCoins + .05 <= amount)
                 {
                     USCoins.Nickel n = new USCoins.Nickel();
+                    totalAmountOfCoins += n.monetaryValue;
                     Coins.Add(n);
                 }
-                else if (totalAmountOfCoins + .01 > amount)
+                else if (totalAmountOfCoins + .01 <= amount)
                 {
                     USCoins.Penny p = new USCoins.Penny();
+                    totalAmountOfCoins += p.monetaryValue;
                     Coins.Add(p);
                 }
+
+                totalAmountOfCoins = Math.Round(totalAmountOfCoins, 2);
             }
 
-            return totalAmountOfCoins;
+            return this;
         }
 
         public ICurrencyRepo MakeChange(double amountTendered, double totalCost)
         {
-            throw new NotImplementedException();
+            double change = amountTendered - totalCost;
+            double totalAmountOfCoins = 0;
+
+            while (change > totalAmountOfCoins)
+            {
+                if (totalAmountOfCoins + 1 <= change)
+                {
+                    USCoins.DollarCoin dc = new USCoins.DollarCoin();
+                    totalAmountOfCoins += dc.monetaryValue;
+                    Coins.Add(dc);
+                }
+                else if (totalAmountOfCoins + .25 <= change)
+                {
+                    USCoins.Quarter q = new USCoins.Quarter();
+                    totalAmountOfCoins += q.monetaryValue;
+                    Coins.Add(q);
+                }
+                else if (totalAmountOfCoins + .1 <= change)
+                {
+                    USCoins.Dime d = new USCoins.Dime();
+                    totalAmountOfCoins += d.monetaryValue;
+                    Coins.Add(d);
+                }
+                else if (totalAmountOfCoins + .05 <= change)
+                {
+                    USCoins.Nickel n = new USCoins.Nickel();
+                    totalAmountOfCoins += n.monetaryValue;
+                    Coins.Add(n);
+                }
+                else if (totalAmountOfCoins + .01 <= change)
+                {
+                    USCoins.Penny p = new USCoins.Penny();
+                    totalAmountOfCoins += p.monetaryValue;
+                    Coins.Add(p);
+                }
+            }
+
+            return this;
         }
 
         public ICoin RemoveCoin(ICoin c)
         {
-            throw new NotImplementedException();
+            for(int i = 0; i < Coins.Capacity; i++)
+            {
+                if (Coins[i].GetType() == c.GetType())
+                {
+                    Coins.RemoveAt(i);
+                    i = Coins.Count + 1;
+                }
+            }
+            return c;
         }
 
         public double TotalValue()
