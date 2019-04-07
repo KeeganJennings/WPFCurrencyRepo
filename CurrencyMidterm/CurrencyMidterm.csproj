@@ -113,5 +113,11 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CurrencyRepo\CurrencyRepo.csproj">
+      <Project>{9c58b805-eba3-4092-88da-f1353a6729b0}</Project>
+      <Name>CurrencyRepo</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
