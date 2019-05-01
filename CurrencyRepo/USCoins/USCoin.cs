@@ -17,6 +17,7 @@ namespace CurrencyMidterm.USCoins
         }
 
         MintMarks mintMark;
+        public string tag;
 
         public string About(int year, string name, double monetaryValue, MintMarks mint)
         {

@@ -11,6 +11,7 @@ namespace CurrencyMidterm.USCoins
         MintMarks mintMark;
         public DollarCoin()
         {
+            tag = "US Coin";
             year = DateTime.Now.Year;
             mintMark = MintMarks.D;
             name = "Dollar Coin";
@@ -19,6 +20,7 @@ namespace CurrencyMidterm.USCoins
 
         public DollarCoin(MintMarks mint)
         {
+            tag = "US Coin";
             year = DateTime.Now.Year;
             mintMark = mint;
             name = "Dollar Coin";

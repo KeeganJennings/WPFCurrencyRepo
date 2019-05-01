@@ -11,6 +11,7 @@ namespace CurrencyMidterm.USCoins
         MintMarks mintMark;
         public Nickel()
         {
+            tag = "US Coin";
             year = DateTime.Now.Year;
             mintMark = MintMarks.D;
             name = "Nickel";
@@ -18,6 +19,7 @@ namespace CurrencyMidterm.USCoins
         }
         public Nickel(MintMarks mint)
         {
+            tag = "US Coin";
             year = DateTime.Now.Year;
             mintMark = mint;
             name = "Nickel";

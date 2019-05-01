@@ -14,8 +14,8 @@ namespace CurrencyMidterm
         void AddCoin(ICoin c);
         int GetCoinCount();
 
-        ICurrencyRepo MakeChange(double amount);
-        ICurrencyRepo MakeChange(double amountTendered, double totalCost);
+        ICurrencyRepo MakeChange(double amount, string tag);
+        ICurrencyRepo MakeChange(double amountTendered, double totalCost, string tag);
 
         ICoin RemoveCoin(ICoin c);
 

@@ -11,6 +11,7 @@ namespace CurrencyMidterm.USCoins
         MintMarks mintMark;
         public Quarter()
         {
+            tag = "US Coin";
             year = DateTime.Now.Year;
             mintMark = MintMarks.D;
             name = "Quarter";
@@ -19,6 +20,7 @@ namespace CurrencyMidterm.USCoins
 
         public Quarter(MintMarks mint)
         {
+            tag = "US Coin";
             year = DateTime.Now.Year;
             mintMark = mint;
             name = "Quarter";

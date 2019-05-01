@@ -11,6 +11,7 @@ namespace CurrencyMidterm.USCoins
         MintMarks mintMark;
         public Penny()
         {
+            tag = "US Coin";
             year = DateTime.Now.Year;
             mintMark = MintMarks.D;
             name = "Penny";
@@ -19,6 +20,7 @@ namespace CurrencyMidterm.USCoins
 
         public Penny(MintMarks mint)
         {
+            tag = "US Coin";
             year = DateTime.Now.Year;
             mintMark = mint;
             name = "Penny";
